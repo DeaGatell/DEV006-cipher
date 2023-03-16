@@ -5,10 +5,43 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+ 
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div class= "container" id="root">
+      <h1>Welcome</h1>
+      <p>This app will allow you to cipher and decipher messages that you will be able to copy and paste
+        wherever you like.</p>
+      <p>You can use these messages if you need to communicate any concerns to someone you trust, but if you feel like you are in danger please do not hesitate to contact real emergency numbers.</p>
+       <input type="button" value="Begin" id="begin">
+       <input type="button" value="Emergency numbers" id="eNumbers">
     </div>
+ 
+    <div id="firstsection">
+      <h2>What would you like to do today?</h2>
+      <input type="button" id="cipher" value="Cipher"> <input type="button" id="decipher" value="Decipher">
+    </div>
+  
+    <div id="secondsection">
+      <h2>Insert your message</h2>
+      <h4>*Remember to use Caps Lock</h4>
+      <input type="text" id="message1"> <input type="submit" value="Cipher" id="cipher1"> <input type="button" id="home" value="Go back">
+    </div>
+    
+    <div id="thirdsection">
+      <h2>Insert your message</h2>
+      <h4>*Remember to use Caps Lock</h4>
+      <input type="text" id="message2"> <input type="submit" value="Decipher" id="decipher1"> <input type="button" id="home" value="Go back">
+    </div>
+
+    <div id="fourthsect">
+
+    </div>
+
+    <div id="fifthsect">
+
+    </div>
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
+
