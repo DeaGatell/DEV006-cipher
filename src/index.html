@@ -7,41 +7,40 @@
   </head>
  
   <body>
-    <div class= "container" id="root">
-      <h1>Welcome</h1>
-      <p>This app will allow you to cipher and decipher messages that you will be able to copy and paste
-        wherever you like.</p>
-      <p>You can use these messages if you need to communicate any concerns to someone you trust, but if you feel like you are in danger please do not hesitate to contact real emergency numbers.</p>
-       <input type="button" value="Begin" id="begin">
-       <input type="button" value="Emergency numbers" id="eNumbers">
-    </div>
- 
-    <div id="firstsection">
-      <h2>What would you like to do today?</h2>
-      <input type="button" id="cipher" value="Cipher"> <input type="button" id="decipher" value="Decipher">
-    </div>
-  
-    <div id="secondsection">
-      <h2>Insert your message</h2>
-      <h4>*Remember to use Caps Lock</h4>
-      <input type="text" id="message1"> <input type="submit" value="Cipher" id="cipher1"> <input type="button" id="home" value="Go back">
-    </div>
-    
-    <div id="thirdsection">
-      <h2>Insert your message</h2>
-      <h4>*Remember to use Caps Lock</h4>
-      <input type="text" id="message2"> <input type="submit" value="Decipher" id="decipher1"> <input type="button" id="home" value="Go back">
+
+    <!--Title-->
+    <div id="maintitle"><h1 id="title">Text Cipher</h1></div>
+
+    <!--Cipher-->
+    <div class= "container" id="codesection">
+      <h2 id="insertcipher">Insert your message to cipher</h2>
+      <form id="ciphertool" autocomplete="off">
+        <input id="ciphertext" spellcheck="false" type="text" name="ciphertext" pattern="[A-Za-z]" placeholder="Write your message here...">
+        <div id="result1"></div>
+      </form>
+      <div class="range">
+        <input id="thisIsN1" type="range" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+        <output id="output1">100</output>
+      </div>
     </div>
 
-    <div id="fourthsect">
-
+    <!--Decipher-->
+    <div class= "container" id="decodesection">
+      <h2 id="insertdecipher">Paste your message to decipher</h2>
+      <form id="deciphertool" autocomplete="off">
+        <input id="deciphertext" spellcheck="false" type="text" name="deciphertext" pattern="[A-Za-z]" placeholder="Paste your message here...">
+        <div id="result2"></div>
+      </form>
+      <div class="range">
+        <input id="thisIsN2" type="range" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+        <output id="output2">100</output>
+      </div>
     </div>
 
-    <div id="fifthsect">
+    <!--Buttons-->
+    <button id="instructions"> How does it work?  </button> <button id="suggestions"> When can I use this?  </button> 
 
-    </div>
-
-    <script src="index.js" type="module"></script>
-  </body>
+<script src="index.js" type="module"></script>
+</body>
 </html>
 
